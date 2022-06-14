@@ -23,6 +23,7 @@ function App () {
   }
 
   return (
+  <div style={{ marginTop: '15%' }}>
   <Container>
     <Card>
       <div style={{ padding: 20}}>
@@ -32,18 +33,21 @@ function App () {
           name="name" 
           value={form.name} 
           onChange={handleChange}
+          placeholder='Name'
         />
         <Input 
           label="Lastname" 
           name="lastname" 
           value={form.lastname} 
           onChange={handleChange}
+          placeholder='Lastname'
         />
         <Input 
           label="Email" 
           name="email" 
           value={form.email} 
           onChange={handleChange}
+          placeholder='Email'
         />
         <Button>Send</Button>
       </form>
@@ -56,6 +60,7 @@ function App () {
       </ul>
     </Card>
   </Container>
+  </div>
   )
 }
 
